@@ -1,0 +1,325 @@
+
+
+
+
+
+/* Desktop -START----------------------------------------------------------- */
+@media only screen and (min-width: 577px) {
+
+    .page-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+
+        /* background-color: red;        
+        height: 100%; */
+    }
+
+    .page-content{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 20px;
+
+        background-color: rgba(249, 178, 125, 0.3);;
+        border-radius: 20px;
+    }
+
+    .left-area{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 20px;
+        /* background-color: lightsalmon; */
+    }
+
+    .change-name-panel{
+        background: rgba(196, 196, 196, 0.5);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        margin: 10px;
+        padding: 20px;
+        width: 100%;
+        
+    }
+
+    .change-name-line{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+        margin: 10px;
+    }
+
+    .change-password-panel{
+        background: rgba(196, 196, 196, 0.5);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        margin: 10px;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .change-password-line{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+        margin: 10px;
+    }
+
+    .right-area{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 20px;
+        /* background-color: lightgreen; */
+    }
+
+    .profile-picture-panel{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        background: rgba(196, 196, 196, 0.5);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        margin: 10px;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .profile-picture-panel div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .occupation-panel{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: rgba(196, 196, 196, 0.5);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        margin: 10px;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .occupation-panel input{
+        margin: 10px;
+    }
+
+    .occupation-panel button{
+        margin: 10px;
+    }
+
+    .button-panel{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(196, 196, 196, 0.5);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        margin: 10px;
+        padding: 20px;
+        width: 100%;
+    }
+
+}
+/* Desktop -END----------------------------------------------------------- */
+
+
+
+
+/* Mobile -START----------------------------------------------------------- */
+@media only screen and (max-width: 576px) {
+
+    .page-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        /* background-color: red;        
+        height: 100%; */
+    }
+
+    .page-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 320px;
+        background-color: rgba(249, 178, 125, 0.4);;
+        border-radius: 20px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .left-area{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* background-color: lightsalmon; */
+    }
+
+    .change-name-panel{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(196, 196, 196, 0.5);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        padding: 5px;
+        margin: 20px;
+    }
+
+    .change-name-panel > h3 {
+        margin: 10px;
+    }
+
+    .change-name-line > input {
+        width: 150px;
+        border-radius: 25px;
+        /* margin-left: 20px; */
+    }
+
+    .change-name-line{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+        margin: 10px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .change-password-panel{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(196, 196, 196, 0.6);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        margin: 20px;
+        padding: 5px;
+    }
+
+    .change-password-panel > h3 {
+        margin: 10px;
+    }
+
+    .change-password-line{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+        margin: 10px;
+    }
+
+    .change-password-line > input {
+        width: 150px;
+        border-radius: 25px;
+        /* margin-left: 20px; */
+    }
+
+    .right-area{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* background-color: lightgreen; */
+    }
+
+    .profile-picture-panel{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        background: rgba(196, 196, 196, 0.7);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        margin: 20px;
+        padding: 5px;
+
+    }
+
+    .profile-picture-panel div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .occupation-panel{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: rgba(196, 196, 196, 0.8);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        margin: 20px;
+        padding: 5px;
+        
+    }
+
+    .occupation-panel input{
+        margin: 10px;
+        border-radius: 25px;
+    }
+
+    .occupation-panel button{
+        margin: 10px;
+    }
+
+    .button-panel{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(196, 196, 196, 0.9);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        margin: 20px;
+        padding: 5px;
+        width: 80%;
+    }
+
+    :host ::ng-deep .msg .p-toast {
+        width: 320px;
+    }
+    
+}
+/* Mobile -END----------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

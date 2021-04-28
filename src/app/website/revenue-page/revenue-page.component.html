@@ -1,0 +1,235 @@
+<div class="page-content">
+    <p-toast position="top-center" class="msg"></p-toast>
+    <p-table [value]="revenue" class="table">
+        <ng-template pTemplate="header" class="table-head">
+            <tr>
+                <th></th>
+                <th>Category</th>
+                <th>Name</th>
+                <th>January</th>
+                <th>February</th>
+                <th>March</th>
+                <th>April</th>
+                <th>May</th>
+                <th>June</th>
+                <th>July</th>
+                <th>August</th>
+                <th>September</th>
+                <th>October</th>
+                <th>November</th>
+                <th>December</th>
+                <th>Total</th>
+                <th>Notes</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-revenue>
+            <tr>
+                <td class="editButtons">
+                    <button pButton type="button" icon="pi pi-save" class="p-button-rounded" (click)="saveRowChanges(revenue)"></button>
+                    <button pButton type="button" icon="pi pi-times" class="p-button-rounded p-button-danger" (click)="deleteRow(revenue)"></button>
+                </td>
+
+                <td pEditableColumn>
+                    <p-cellEditor>
+                        <ng-template pTemplate="input">
+                            <input pInputText type="text" [(ngModel)]="revenue.category">
+                        </ng-template>
+                        <ng-template pTemplate="output">
+                            {{revenue.category}}
+                        </ng-template>
+                    </p-cellEditor>
+                </td>
+
+                <td pEditableColumn>
+                    <p-cellEditor>
+                        <ng-template pTemplate="input">
+                            <input pInputText type="text" [(ngModel)]="revenue.name">
+                        </ng-template>
+                        <ng-template pTemplate="output">
+                            {{revenue.name}}
+                        </ng-template>
+                    </p-cellEditor>
+                </td>
+
+                <td pEditableColumn>
+                    <p-cellEditor>
+                        <ng-template pTemplate="input">
+                            <input pInputText type="text" [(ngModel)]="revenue.january">
+                        </ng-template>
+                        <ng-template pTemplate="output">
+                            {{revenue.january}}
+                        </ng-template>
+                    </p-cellEditor>
+                </td>
+
+                <td pEditableColumn>
+                    <p-cellEditor>
+                        <ng-template pTemplate="input">
+                            <input pInputText type="text" [(ngModel)]="revenue.february">
+                        </ng-template>
+                        <ng-template pTemplate="output">
+                            {{revenue.february}}
+                        </ng-template>
+                    </p-cellEditor>
+                </td>
+
+                <td pEditableColumn>
+                    <p-cellEditor>
+                        <ng-template pTemplate="input">
+                            <input pInputText type="text" [(ngModel)]="revenue.march">
+                        </ng-template>
+                        <ng-template pTemplate="output">
+                            {{revenue.march}}
+                        </ng-template>
+                    </p-cellEditor>
+                </td>
+
+                <td pEditableColumn>
+                    <p-cellEditor>
+                        <ng-template pTemplate="input">
+                            <input pInputText type="text" [(ngModel)]="revenue.april">
+                        </ng-template>
+                        <ng-template pTemplate="output">
+                            {{revenue.april}}
+                        </ng-template>
+                    </p-cellEditor>
+                </td>
+
+                <td pEditableColumn>
+                    <p-cellEditor>
+                        <ng-template pTemplate="input">
+                            <input pInputText type="text" [(ngModel)]="revenue.may">
+                        </ng-template>
+                        <ng-template pTemplate="output">
+                            {{revenue.may}}
+                        </ng-template>
+                    </p-cellEditor>
+                </td>
+
+                <td pEditableColumn>
+                    <p-cellEditor>
+                        <ng-template pTemplate="input">
+                            <input pInputText type="text" [(ngModel)]="revenue.june">
+                        </ng-template>
+                        <ng-template pTemplate="output">
+                            {{revenue.june}}
+                        </ng-template>
+                    </p-cellEditor>
+                </td>
+
+                <td pEditableColumn>
+                    <p-cellEditor>
+                        <ng-template pTemplate="input">
+                            <input pInputText type="text" [(ngModel)]="revenue.july">
+                        </ng-template>
+                        <ng-template pTemplate="output">
+                            {{revenue.july}}
+                        </ng-template>
+                    </p-cellEditor>
+                </td>
+
+                <td pEditableColumn>
+                    <p-cellEditor>
+                        <ng-template pTemplate="input">
+                            <input pInputText type="text" [(ngModel)]="revenue.august">
+                        </ng-template>
+                        <ng-template pTemplate="output">
+                            {{revenue.august}}
+                        </ng-template>
+                    </p-cellEditor>
+                </td>
+
+                <td pEditableColumn>
+                    <p-cellEditor>
+                        <ng-template pTemplate="input">
+                            <input pInputText type="text" [(ngModel)]="revenue.september">
+                        </ng-template>
+                        <ng-template pTemplate="output">
+                            {{revenue.september}}
+                        </ng-template>
+                    </p-cellEditor>
+                </td>
+
+                <td pEditableColumn>
+                    <p-cellEditor>
+                        <ng-template pTemplate="input">
+                            <input pInputText type="text" [(ngModel)]="revenue.october">
+                        </ng-template>
+                        <ng-template pTemplate="output">
+                            {{revenue.october}}
+                        </ng-template>
+                    </p-cellEditor>
+                </td>
+
+                <td pEditableColumn>
+                    <p-cellEditor>
+                        <ng-template pTemplate="input">
+                            <input pInputText type="text" [(ngModel)]="revenue.november">
+                        </ng-template>
+                        <ng-template pTemplate="output">
+                            {{revenue.november}}
+                        </ng-template>
+                    </p-cellEditor>
+                </td>
+
+                <td pEditableColumn>
+                    <p-cellEditor>
+                        <ng-template pTemplate="input">
+                            <input pInputText type="text" [(ngModel)]="revenue.december">
+                        </ng-template>
+                        <ng-template pTemplate="output">
+                            {{revenue.december}}
+                        </ng-template>
+                    </p-cellEditor>
+                </td>
+
+                <td>
+                    {{revenue.total}}
+                </td>
+                
+                <td>
+                    <p-dialog header="Notes" [(visible)]="modalDisplay" [modal]="true" [style]="{minWidth: '320px'}" [baseZIndex]="10000" [draggable]="false" [resizable]="false">
+                        <textarea [rows]="5" [cols]="30" pInputTextarea [(ngModel)]="displayedNote" autoResize="autoResize" style="min-height: 50px;"></textarea>
+                        <ng-template pTemplate="footer">
+                            <button pButton type="button" label="Save" (click)="saveRowNotes()"></button>
+                            <button pButton type="button" label="Back" (click)="closeRowNotes()"></button>
+                        </ng-template>
+                    </p-dialog>
+                    <button pButton type="button" icon="pi pi-book" class="p-button-rounded" (click)="showRowNotes(revenue)"></button>
+                </td>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="footer">
+            <tr>
+                <td></td>
+                <td>
+                    <button pButton type="button" label="Add Row" class="p-button-rounded"  (click)="addRow()"></button>
+                </td>
+                <td>Total</td>
+                <td>{{monthlyRevenue[0]}}</td>
+                <td>{{monthlyRevenue[1]}}</td>
+                <td>{{monthlyRevenue[2]}}</td>
+                <td>{{monthlyRevenue[3]}}</td>
+                <td>{{monthlyRevenue[4]}}</td>
+                <td>{{monthlyRevenue[5]}}</td>
+                <td>{{monthlyRevenue[6]}}</td>
+                <td>{{monthlyRevenue[7]}}</td>
+                <td>{{monthlyRevenue[8]}}</td>
+                <td>{{monthlyRevenue[9]}}</td>
+                <td>{{monthlyRevenue[10]}}</td>
+                <td>{{monthlyRevenue[11]}}</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="emptymessage" let-columns>
+            <tr>
+                <td [attr.colspan]="8" style="color: lightskyblue;">
+                    No records found
+                </td>
+                <td [attr.colspan]="9">
+                </td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div>

@@ -1,0 +1,60 @@
+<div class="page-content">
+    <div class="left-area">
+        <div class="overall-panel">
+            <h2>Overall Numbers</h2>
+            <div class="overall-panel-line">
+                <span>Revenue</span>
+                <span class="overall-panel-numbers-revenue">{{overallNumbersRevenue}}</span>
+            </div>
+            <div class="overall-panel-line">
+                <span>Expense</span>
+                <span class="overall-panel-numbers-expense">{{overallNumbersExpense}}</span>
+            </div>
+            <div class="overall-line-divider"></div>
+            <div class="overall-panel-line">
+                <span>Total</span>
+                <span class="overall-panel-numbers-total">{{overallNumbersTotal}}</span>
+            </div>
+            <div class="overall-panel-radio-line">
+                <p-radioButton name="overallNumbersTime" value="Monthly" label="Monthly" (onClick)="onChangeOverallNumbersTime()" [(ngModel)]="overallNumbersTime" class="overall-radio"></p-radioButton>
+                <p-radioButton name="overallNumbersTime" value="Yearly" label="Yearly" (onClick)="onChangeOverallNumbersTime()" [(ngModel)]="overallNumbersTime" class="overall-radio"></p-radioButton>
+            </div>
+        </div>
+    </div>
+    <div class="middle-area">
+        <div class="revenue-panel">
+            <h2>Numbers by Category</h2>
+            <div class="revenue-panel-line">
+                <span>Revenue</span>
+                <span class="revenue-panel-numbers-revenue">{{revenueCategory}}</span>
+            </div>
+            <p-dropdown [options]="revenueCategories" (onChange)="onChangeRevenueCategory()" [(ngModel)]="selectedRevenueCategory" placeholder="Choose Category" optionLabel="name" [showClear]="true" class="category-dropdown"></p-dropdown>
+        </div>
+        <div class="expense-panel">
+            <h2>Numbers by Category</h2>
+            <div class="expense-panel-line">
+                <span>Expense</span>
+                <span class="expense-panel-numbers-expense">{{expenseCategory}}</span>
+            </div>
+            <p-dropdown [options]="expenseCategories" (onChange)="onChangeExpenseCategory()" [(ngModel)]="selectedExpenseCategory" placeholder="Choose Category" optionLabel="name" [showClear]="true" class="category-dropdown"></p-dropdown>
+        </div>
+    </div>
+    <div class="right-area">
+        <div class="pie-panel">
+            <h2>Pie (All Categories)</h2>
+            <canvas baseChart style="margin-top: 20px; margin-bottom: 20px;"
+            [data]="pieChartData"
+            [labels]="pieChartLabels"
+            [chartType]="pieChartType"
+            [options]="pieChartOptions"
+            [plugins]="pieChartPlugins"
+            [colors]="pieChartColors"
+            [legend]="pieChartLegend">
+          </canvas>
+            <div class="pie-panel-radio-line">
+                <p-radioButton name="piePanelCategory" value="Revenue" (onClick)="onChangePieTime()" label="Revenue" [(ngModel)]="piePanelCategory" class="pie-radio"></p-radioButton>
+                <p-radioButton name="piePanelCategory" value="Expense" (onClick)="onChangePieTime()" label="Expense" [(ngModel)]="piePanelCategory" class="pie-radio"></p-radioButton>
+            </div>
+        </div>
+    </div>
+</div>

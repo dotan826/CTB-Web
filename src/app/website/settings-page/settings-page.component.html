@@ -1,0 +1,54 @@
+<div class="page-container">
+    <p-toast position="top-center" class="msg"></p-toast>
+    <div class="page-content">
+        <div class="left-area">
+            <div class="change-name-panel">
+                <h3>Change Name</h3>
+                <div class="change-name-line">
+                    <span>New Name</span>
+                    <input type="text" pInputText [(ngModel)]="name" />
+                </div>
+            </div>
+            <div class="change-password-panel">
+                <h3>Change Password</h3>
+                <div class="change-password-line">
+                    <span>Old Password</span>
+                    <input type="password" pPassword [(ngModel)]="oldPassword" />
+                </div>
+                <div class="change-password-line">
+                    <span>New Password</span>
+                    <input type="password" pPassword [(ngModel)]="newPassword" />
+                </div>
+                <div class="change-password-line">
+                    <span>Confirm Password</span>
+                    <input type="password" pPassword [(ngModel)]="confirmPassword" />
+                </div>
+            </div>
+        </div>
+        <div class="right-area">
+            <div class="profile-picture-panel">
+                <div>
+                    <h3>Profile Picture</h3>
+                    <!-- <button pButton type="button" label="Change" class="p-button-rounded p-button-secondary"></button> -->
+                    <!-- <form action="api/profile/set" method="post" enctype="multipart/form-data">
+                        <input type="file" name="avatar" />
+                    </form> -->
+                    <!-- <form (action)="uploadURL" method="post" enctype="multipart/form-data">
+                        <p-fileUpload #fubauto mode="basic" name="profile-pic" accept=".jpg" (onUpload)="onUploadFinish($event)" maxFileSize="1000000" chooseLabel="Change"  ></p-fileUpload>
+                    </form> -->
+                    <!-- <p-fileUpload #fubauto mode="basic" name="profile-pic" (url)="getURL()" accept=".jpg" (onUpload)="onUploadFinish($event)" maxFileSize="1000000" chooseLabel="Change"  ></p-fileUpload> -->
+                    <!-- <p-fileUpload #fubauto mode="basic" name="profile-pic" [url]="uploadURL" accept=".jpg" (uploadHandler)="customUpload($event, fubauto)" customUpload="true" maxFileSize="2000000" chooseLabel="Change"></p-fileUpload> -->
+                    <p-fileUpload #fubauto mode="basic" name="profile-pic" [url]="uploadURL" accept=".jpg" (onUpload)="onUploadFinish($event)" (onSelect)="onSelect($event, fubauto)" maxFileSize="1000000" chooseLabel="Change"  ></p-fileUpload>
+                </div>
+                <img [src]="store.profilePicture" alt="profile picture" width="100px" height="100px" style="margin: 10px; border-radius: 50%;">
+            </div>
+            <div class="occupation-panel">
+                <h3>Main Occupation Description</h3>
+                <input type="text" pInputText [(ngModel)]="jobDescription" />
+            </div>
+            <div class="button-panel">
+                <button pButton type="button" label="Save All Changes" class="p-button-rounded p-button-secondary" (click)="updateUserDetails()"></button>
+            </div>
+        </div>
+    </div>
+</div>

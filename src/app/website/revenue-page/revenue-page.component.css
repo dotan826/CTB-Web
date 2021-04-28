@@ -1,0 +1,184 @@
+
+
+
+
+
+/* Desktop -START----------------------------------------------------------- */
+@media only screen and (min-width: 577px) {
+
+    .page-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background-color: rgba(55, 216, 51, 0.5);
+        /* background-color: rgba(240, 128, 128, 0.7); */
+        border-radius: 20px;
+
+    }
+
+    .table{
+        overflow: auto;
+        max-width: 100%;
+        max-height: 600px;
+    }
+
+    input{
+        width: 100%;
+    }
+
+    /* .table tr{
+        
+    } */
+
+    :host ::ng-deep .p-datatable .p-datatable-thead > tr > th {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0px;
+        z-index: 1000;
+    }
+
+    :host ::ng-deep .p-datatable .p-datatable-tfoot > tr > td {
+        position: -webkit-sticky;
+        position: sticky;
+        bottom: 0px;
+        z-index: 1000;
+    }
+
+    .editButtons {
+        position: sticky;
+        left: 0px;
+        z-index: 900;
+        background-color: white;
+    }
+
+    .table th{
+        width: 140px;
+        text-align: center;
+    }
+
+    .table td{
+        overflow: auto;
+        text-align: center;
+    }
+
+    /* .table-head{
+
+    } */
+
+    .p-button.p-button-icon-only.p-button-rounded{
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+    }
+
+
+}
+/* Desktop -END----------------------------------------------------------- */
+
+
+
+
+/* Mobile -START----------------------------------------------------------- */
+@media only screen and (max-width: 576px) {
+
+    .page-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background-color: rgba(55, 216, 51, 0.5);
+        /* background-color: rgba(240, 128, 128, 0.7); */
+        border-radius: 20px;
+        width: 320px;
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+
+    .table{
+        overflow: auto;
+        max-width: 100%;
+    }
+
+    input{
+        width: 100%;
+    }
+
+    /* .table tr{
+        
+    } */
+
+    :host ::ng-deep .p-datatable .p-datatable-thead > tr > th {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0px;
+        z-index: 1000;
+    }
+
+    :host ::ng-deep .p-datatable .p-datatable-tfoot > tr > td {
+        position: -webkit-sticky;
+        position: sticky;
+        bottom: 0px;
+        z-index: 1000;
+    }
+
+    .editButtons {
+        position: sticky;
+        left: 0px;
+        z-index: 900;
+        background-color: white;
+        display: flex;
+
+    }
+
+    .table th{
+        width: 100px;
+        text-align: center;
+    }
+
+    .table td{
+        overflow: auto;
+        text-align: center;
+        height: 60px;
+        padding: 8px;
+    }
+
+    /* .table-head{
+
+    } */
+
+    .p-button.p-button-icon-only.p-button-rounded{
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+    }
+
+    :host ::ng-deep .msg .p-toast {
+        width: 320px;
+    }
+
+    
+}
+/* Mobile -END----------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

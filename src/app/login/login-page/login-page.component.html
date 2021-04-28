@@ -1,0 +1,94 @@
+<div class="page">
+    <div class="page-container">
+        <p-toast position="top-center" class="msg"></p-toast>
+        <div class="page-Header">
+            <h1>Check The Bill</h1>
+            <p>Your Companion for Smart Finance Management</p>
+        </div>
+        <div class="left-arrow">
+            <svg width="31" height="55" viewBox="0 0 31 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M14.6035 53.4415C15.3996 54.2072 16.6657 54.1827 17.4314 53.3866L29.9099 40.4141C30.6756 39.618 30.6511 38.3519 29.855 37.5862C29.0589 36.8204 27.7928 36.845 27.0271 37.6411L15.9351 49.1722L4.40395 38.0802C3.60789 37.3145 2.3418 37.339 1.57606 38.1351C0.810314 38.9312 0.834891 40.1973 1.63095 40.963L14.6035 53.4415ZM13.0004 1.03882L13.9904 52.0389L17.9896 51.9613L16.9996 0.961184L13.0004 1.03882Z"
+                    fill="black" />
+            </svg>
+        </div>
+        <div class="login-area">
+            <div *ngIf="loginExist ? true : false" class="login-area-exist">
+                <h2>Login</h2>
+                <div class="login-area-exist-line">
+                    <label>Email</label>
+                    <input type="text" pInputText [(ngModel)]="email" />
+                </div>
+                <div class="login-area-exist-line">
+                    <label>Password</label>
+                    <input type="password" pInputText [(ngModel)]="password" />
+                </div>
+                <button pButton type="button" label="Enter" (click)="signInExistUser()"></button>
+                <div>
+                    <p-checkbox [(ngModel)]="rememberMe" [binary]="true" label="Remember Me"></p-checkbox>
+                </div>
+                <a routerLink="/login">Reset Password</a>
+            </div>
+            <div *ngIf="loginExist ? false : true" class="login-area-new">
+                <h2>Create User</h2>
+                <div class="login-area-new-line">
+                    <label>Name</label>
+                    <input type="text" pInputText [(ngModel)]="newName" />
+                </div>
+                <div class="login-area-new-line">
+                    <label>Email</label>
+                    <input type="text" pInputText [(ngModel)]="newEmail" />
+                </div>
+                <div class="login-area-new-line">
+                    <label>Password</label>
+                    <input type="password" pInputText [(ngModel)]="newPassword" />
+                </div>
+                <div class="login-area-new-line">
+                    <label>Confirm Password</label>
+                    <input type="password" pInputText [(ngModel)]="confirmPassword" />
+                </div>
+                <button pButton type="button" label="Create" (click)="signInNewUser()"></button>
+            </div>
+        </div>
+        <div class="middle-top-arrow">
+            <svg width="228" height="156" viewBox="0 0 228 156" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M8.05477 141.535C7.79807 142.61 8.46089 143.689 9.53522 143.945L27.0424 148.128C28.1167 148.385 29.1957 147.722 29.4524 146.648C29.7091 145.574 29.0463 144.495 27.972 144.238L12.41 140.52L16.1284 124.958C16.3851 123.883 15.7223 122.804 14.6479 122.548C13.5736 122.291 12.4946 122.954 12.2379 124.028L8.05477 141.535ZM218.953 11.2958L8.95317 140.296L11.0468 143.704L221.047 14.7042L218.953 11.2958Z"
+                    fill="black" />
+            </svg>
+        </div>
+        <div class="middle-arrow">
+            <svg width="203" height="31" viewBox="0 0 203 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M201.407 17.4213C202.192 16.6442 202.198 15.3779 201.421 14.5929L188.758 1.80119C187.98 1.01623 186.714 1.00986 185.929 1.78698C185.144 2.56409 185.138 3.83041 185.915 4.61537L197.172 15.9858L185.801 27.2425C185.016 28.0196 185.01 29.2859 185.787 30.0709C186.564 30.8559 187.83 30.8622 188.615 30.0851L201.407 17.4213ZM0.98995 17L199.99 18L200.01 14L1.01005 13L0.98995 17Z"
+                    fill="black" />
+            </svg>
+        </div>
+        <div class="middle-bottom-arrow">
+            <svg width="217" height="129" viewBox="0 0 217 129" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M208.636 115.896C209.683 115.545 210.248 114.411 209.896 113.364L204.17 96.2988C203.819 95.2517 202.685 94.6876 201.638 95.039C200.59 95.3904 200.026 96.5241 200.378 97.5713L205.468 112.74L190.299 117.83C189.252 118.181 188.688 119.315 189.039 120.362C189.39 121.41 190.524 121.974 191.571 121.622L208.636 115.896ZM6.10914 15.7906L207.109 115.791L208.891 112.209L7.89086 12.2094L6.10914 15.7906Z"
+                    fill="black" />
+            </svg>
+        </div>
+        <div class="picture-area">
+            <img src="../../../assets/images/money.jpeg">
+        </div>
+        <div class="join-area">
+            <div *ngIf="loginExist ? true : false" class="join-area-go-in">
+                <button pButton type="button" (click)="setLoginStatus()"
+                    class="p-button-success p-button-rounded p-button-raised"
+                    label="Wait! I want to join you..."></button>
+                <img src="../../../assets/images/join-us.svg">
+            </div>
+            <div *ngIf="loginExist ? false : true" class="join-area-go-out">
+                <button pButton type="button" (click)="setLoginStatus()"
+                    class="p-button-success p-button-rounded p-button-raised" label="Go Back to Login"></button>
+            </div>
+        </div>
+        <div class="guest-area">
+            <button pButton type="button" class="p-button-secondary p-button-rounded p-button-raised" (click)="guestLogin()"
+                label="I'm a Guest"></button>
+        </div>
+    </div>
+</div>

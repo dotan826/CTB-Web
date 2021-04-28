@@ -1,0 +1,290 @@
+
+
+
+
+
+/* Desktop -START----------------------------------------------------------- */
+@media only screen and (min-width: 577px) {
+
+    .page-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        /* background-color: red; */
+    }
+
+    .page-left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-start;
+    }
+
+    .report-details{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba(156, 181, 196, 0.8);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        width: 300px;
+        height: 300px;
+        margin: 30px;
+    }
+
+    .report-line{
+        display: flex;
+        justify-self: center;
+        align-items: center;
+    }
+
+    .dot-status{
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        background-color: grey;
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .revenue-status{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        font-weight: bold;
+        background: rgba(55, 216, 51, 0.5);
+        border-radius: 20px;
+        width: 100px;
+        height: 30px;
+        margin: 10px;
+    }
+
+    .expense-status{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        font-weight: bold;
+        background: rgba(255, 0, 0, 0.5);
+        border-radius: 20px;
+        width: 100px;
+        height: 30px;
+        margin: 10px;
+    }
+
+    .page-right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 500px;
+    }
+
+    .user-details{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(174, 211, 207, 0.6);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        width:350px;
+        height: 150px;
+        align-self: flex-end;
+        margin: 30px;
+        
+    }
+
+    .user-details-name{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .user-details-name h3{
+        margin: 10px;
+    }
+
+    .user-details-picture{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: #79C8D3; */
+        /* border-radius: 50%; */
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+    }
+
+    .report-graph{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(174, 226, 170, 0.5);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        width: 400px;
+        height: 300px;
+        margin: 30px;
+        padding: 10px;
+    }
+
+
+
+}
+/* Desktop -END----------------------------------------------------------- */
+
+
+
+
+/* Mobile -START----------------------------------------------------------- */
+@media only screen and (max-width: 576px) {
+
+    .page-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 320px;
+        margin-top: 30px;
+        margin-bottom: 70px;
+    }
+
+    .page-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .report-details{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba(156, 181, 196, 0.8);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        width: 300px;
+    }
+
+    .report-line{
+        display: flex;
+        justify-self: center;
+        align-items: center;
+    }
+
+    .dot-status{
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        background-color: grey;
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .revenue-status{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        font-weight: bold;
+        background: rgba(55, 216, 51, 0.5);
+        border-radius: 20px;
+        width: 100px;
+        height: 30px;
+        margin: 10px;
+    }
+
+    .expense-status{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        font-weight: bold;
+        background: rgba(255, 0, 0, 0.5);
+        border-radius: 20px;
+        width: 100px;
+        height: 30px;
+        margin: 10px;
+    }
+
+    .page-right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .user-details{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(174, 211, 207, 0.6);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        width:300px;
+        height: 150px;
+        margin: 30px;
+    }
+
+    .user-details-name{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .user-details-name h3{
+        margin: 10px;
+    }
+
+    .user-details-picture{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: #79C8D3; */
+        /* border-radius: 50%; */
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+    }
+
+    .report-graph{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(174, 226, 170, 0.8);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        width: 300px;
+        height: 180px;
+        margin: 10px;
+    }
+    
+}
+/* Mobile -END----------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

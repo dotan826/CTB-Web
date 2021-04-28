@@ -1,0 +1,421 @@
+
+
+
+
+
+/* Desktop -START----------------------------------------------------------- */
+@media only screen and (min-width: 577px) {
+
+    .page-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+
+        /* background-color: lightseagreen;
+        height: 100%; */
+    }
+
+    /* <<<<<<<<<<<<<< Left Area >>>>>>>>>>>>>>>>> */
+
+    .left-area{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 30%;
+        height: 90%;
+        /* background-color: lightslategray; */
+        margin: 20px;
+    }
+
+    .overall-panel{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: rgba(196, 196, 196, 0.5);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        padding: 20px;
+        margin: 20px;
+        width: 100%;
+    }
+
+    .overall-line-divider{
+        height: 2px;
+        width: 100%;
+        background-color: black;
+    }
+
+    .overall-panel-line{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin: 10px;
+        font-weight: bold;
+    }
+
+    .overall-panel-numbers-revenue{
+        background-color: #B4EDAB;
+        border-radius: 20px;
+        width: 100px;
+        text-align: center;
+    }
+
+    .overall-panel-numbers-expense{
+        background-color: #CD9898;
+        border-radius: 20px;
+        width: 100px;
+        text-align: center;
+    }
+
+    .overall-panel-numbers-total{
+        background-color: #B4EDAB;
+        border-radius: 20px;
+        width: 100px;
+        text-align: center;
+    }
+
+    .overall-panel-radio-line{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        font-weight: bold;
+    }
+
+    .overall-panel-radio-line .overall-radio{
+        margin: 5px;
+    }
+
+    /* <<<<<<<<<<<<<< Middle Area >>>>>>>>>>>>>>>>> */
+
+    .middle-area{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        width: 30%;
+        height: 90%;
+        /* background-color: lightslategray; */
+        margin: 20px;
+    }
+
+    .revenue-panel{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: rgba(159, 228, 158, 0.5);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        padding: 20px;
+        margin: 20px;
+        width: 100%;
+    }
+
+    .revenue-panel-line{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+        margin: 20px;
+        font-weight: bold;
+    }
+
+    .revenue-panel-numbers-revenue{
+        background-color: #B4EDAB;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        border-radius: 20px;
+        width: 100px;
+        text-align: center;
+    }
+
+    .expense-panel{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: rgba(228, 158, 158, 0.5);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        padding: 20px;
+        margin: 20px;
+        width: 100%;
+    }
+
+    .expense-panel-line{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+        margin: 20px;
+        font-weight: bold;
+    }
+
+    .expense-panel-numbers-expense{
+        background-color: #CD9898;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        border-radius: 20px;
+        width: 100px;
+        text-align: center;
+    }
+
+    /* <<<<<<<<<<<<<< Right Area >>>>>>>>>>>>>>>>> */
+
+    .right-area{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 30%;
+        height: 90%;
+        /* background-color: lightslategray; */
+        margin: 20px;
+    }
+
+    .pie-panel{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: rgba(110, 137, 189, 0.5);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        padding: 20px;
+        margin: 20px;
+        width: 100%;
+    }
+
+    .pie-panel-radio-line{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        font-weight: bold;
+    }
+
+    .pie-panel-radio-line .pie-radio{
+        margin: 5px;
+    }
+
+}
+/* Desktop -END----------------------------------------------------------- */
+
+
+
+
+/* Mobile -START----------------------------------------------------------- */
+@media only screen and (max-width: 576px) {
+
+    .page-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 320px;
+        /* background-color: lightseagreen;
+        height: 100%; */
+    }
+
+    /* <<<<<<<<<<<<<< Left Area >>>>>>>>>>>>>>>>> */
+
+    .left-area{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: lightslategray; */
+
+    }
+
+    .overall-panel{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: rgba(196, 196, 196, 0.5);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    .overall-line-divider{
+        height: 2px;
+        width: 100%;
+        background-color: black;
+    }
+
+    .overall-panel-line{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin: 10px;
+        font-weight: bold;
+    }
+
+    .overall-panel-numbers-revenue{
+        background-color: #B4EDAB;
+        border-radius: 20px;
+        width: 100px;
+        text-align: center;
+    }
+
+    .overall-panel-numbers-expense{
+        background-color: #CD9898;
+        border-radius: 20px;
+        width: 100px;
+        text-align: center;
+    }
+
+    .overall-panel-numbers-total{
+        background-color: #B4EDAB;
+        border-radius: 20px;
+        width: 100px;
+        text-align: center;
+    }
+
+    .overall-panel-radio-line{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        font-weight: bold;
+    }
+
+    .overall-panel-radio-line .overall-radio{
+        margin: 5px;
+    }
+
+    /* <<<<<<<<<<<<<< Middle Area >>>>>>>>>>>>>>>>> */
+
+    .middle-area{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        /* background-color: lightslategray; */
+    }
+
+    .revenue-panel{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: rgba(159, 228, 158, 0.5);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        padding: 20px;
+        margin-top: 20px;
+        
+    }
+
+    .revenue-panel-line{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+        margin: 20px;
+        font-weight: bold;
+    }
+
+    .revenue-panel-numbers-revenue{
+        background-color: #B4EDAB;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        border-radius: 20px;
+        width: 100px;
+        text-align: center;
+    }
+
+    .expense-panel{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: rgba(228, 158, 158, 0.5);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .expense-panel-line{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+        margin: 20px;
+        font-weight: bold;
+    }
+
+    .expense-panel-numbers-expense{
+        background-color: #CD9898;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        border-radius: 20px;
+        width: 100px;
+        text-align: center;
+    }
+
+    /* <<<<<<<<<<<<<< Right Area >>>>>>>>>>>>>>>>> */
+
+    .right-area{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        /* background-color: lightslategray; */
+        margin-top: 20px;
+    }
+
+    .pie-panel{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: rgba(110, 137, 189, 0.8);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    .pie-panel-radio-line{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        font-weight: bold;
+    }
+
+    .pie-panel-radio-line .pie-radio{
+        margin: 5px;
+    }
+    
+}
+/* Mobile -END----------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

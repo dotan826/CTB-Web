@@ -1,0 +1,514 @@
+
+
+
+
+
+/* Desktop -START----------------------------------------------------------- */
+@media only screen and (min-width: 577px) {
+    
+    .page{
+        background-image: url('../../../assets/images/winter.png');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .page-container{
+        max-width: 1400px;
+        min-height: 100vh;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        justify-items: center;
+        align-items: center;
+
+    }
+
+    .page-Header{
+        grid-column: 2/5;
+        grid-row: 3/6;
+        border: solid 2px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        width: 90%;
+    }
+
+    .page-Header p{
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .left-arrow{
+        grid-column: 3/4;
+        grid-row: 6/7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+
+    .login-area{
+        grid-column: 2/5;
+        grid-row: 7/12;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+
+    .login-area-exist{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba(123, 164, 221, 0.8); 
+        border-radius: 20px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .login-area-exist *{
+        margin: 5px;
+    }
+
+    .login-area-exist label{
+        font-weight: bold;
+    }
+
+    .p-inputtext{
+        border-radius: 20px;
+        
+    }
+
+    .login-area-exist-line{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+
+    }
+
+    .login-area-new{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba(123, 164, 221, 0.8); 
+        border-radius: 20px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .login-area-new *{
+        margin: 5px;
+    }
+
+    .login-area-new-line{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+    }
+
+    .middle-top-arrow{
+        grid-column: 5/7;
+        grid-row: 6/8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+
+    .middle-arrow{
+        grid-column: 5/7;
+        grid-row: 9/10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+
+    .middle-bottom-arrow{
+        grid-column: 5/7;
+        grid-row: 10/12;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+
+    .picture-area{
+        grid-column: 7/12;
+        grid-row: 2/7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+
+    .picture-area img{
+        max-width: 100%;
+        border-radius: 20px;
+    }
+
+    .join-area{
+        grid-column: 7/11;
+        grid-row: 8/10;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        width: 90%;
+        height: 90%;
+        
+    }
+
+    .join-area .join-area-go-in {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(125, 185, 189, 0.8);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        width: 100%;
+    }
+
+    .join-area .join-area-go-in button {
+        margin: 10px;
+    }
+
+    .join-area .join-area-go-in button:hover {
+        animation: joinButtonAnimation ease-in-out 2s infinite;
+    }
+
+    @keyframes joinButtonAnimation {
+        0%{
+            transform: scale(1);
+        }
+        50%{
+            transform: scale(1.5);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
+
+    .join-area .join-area-go-in img{
+        max-height: 110px;
+        margin: 10px;
+    }
+
+    .join-area .join-area-go-out {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(125, 185, 189, 0.8);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        width: 50%;
+        height: 50%;
+        
+    }
+
+
+
+    .guest-area{
+        grid-column: 7/9;
+        grid-row: 11/12;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(203, 164, 128, 0.8);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        width: 100%;
+        height: 50px;
+    }
+
+    .guest-area button:hover {
+        animation: guestButtonAnimation ease-in-out 2s infinite;
+    }
+
+    @keyframes guestButtonAnimation {
+        0%{
+            transform: scale(1);
+        }
+        50%{
+            transform: scale(1.5);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
+
+}
+/* Desktop -END----------------------------------------------------------- */
+
+
+
+
+
+
+/* Mobile -START----------------------------------------------------------- */
+@media only screen and (max-width: 576px) {
+    
+    .page{
+        background-image: url('../../../assets/images/winter.png');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .page-container{
+        max-width: 320px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .page-Header{
+        border: solid 2px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .page-Header p{
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .page-Header h1{
+        margin: 10px;
+    }
+
+    .left-arrow{
+        display: none;
+    }
+
+    .login-area{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .login-area-exist{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba(123, 164, 221, 0.8); 
+        border-radius: 20px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+
+    .login-area-exist *{
+        margin: 5px;
+    }
+
+    .login-area-exist label{
+        font-weight: bold;
+    }
+
+    .p-inputtext{
+        border-radius: 20px;
+        width: 60%;
+    }
+
+    .login-area-exist-line{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 20px;
+    }
+
+    .login-area-new{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba(123, 164, 221, 0.8); 
+        border-radius: 20px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+
+    .login-area-new *{
+        margin: 5px;
+    }
+
+    .login-area-new-line{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .login-area-new label{
+        font-weight: bold;
+    }
+
+    .middle-top-arrow{
+        display: none;
+    }
+
+    .middle-arrow{
+        display: none;
+    }
+
+    .middle-bottom-arrow{
+        display: none;
+    }
+
+    .picture-area{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .picture-area img{
+        max-width: 100%;
+        border-radius: 20px;
+    }
+
+    .join-area{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .join-area .join-area-go-in {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(125, 185, 189, 0.8);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        height: 100px;
+        border-radius: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .join-area .join-area-go-in button {
+        margin: 10px;
+    }
+
+    .join-area .join-area-go-in button:hover {
+        animation: joinButtonAnimation ease-in-out 2s infinite;
+    }
+
+    @keyframes joinButtonAnimation {
+        0%{
+            transform: scale(1);
+        }
+        50%{
+            transform: scale(1.5);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
+
+    .join-area .join-area-go-in img{
+        max-height: 110px;
+        margin: 10px;
+    }
+
+    .join-area .join-area-go-out {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(125, 185, 189, 0.8);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        width: 100%;
+        height: 70px;
+        
+    }
+
+    .guest-area{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(203, 164, 128, 0.8);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        width: 100%;
+        height: 50px;
+        margin-bottom: 70px;
+        height: 70px;
+    }
+
+    .guest-area button:hover {
+        animation: guestButtonAnimation ease-in-out 2s infinite;
+    }
+
+    @keyframes guestButtonAnimation {
+        0%{
+            transform: scale(1);
+        }
+        50%{
+            transform: scale(1.5);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
+
+    :host ::ng-deep .msg .p-toast {
+        width: 320px;
+    }
+
+}
+/* Mobile -END----------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
