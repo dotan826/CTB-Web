@@ -142,7 +142,7 @@ export class SettingsPageComponent implements OnInit {
     // window.location.reload(); // refresh page to update profile picture
 
     // this.profilePicture = `https://storage.googleapis.com/finance-overall-storage/${window.localStorage.getItem(APP_USER_ID)}.jpg?t=${new Date().getTime()}`; // refresh profile picture
-    this.store.setProfilePicture(`https://storage.googleapis.com/finance-overall-storage/${window.localStorage.getItem(APP_USER_ID)}.jpg?t=${new Date().getTime()}`);
+    this.store.setProfilePicture(`https://storage.googleapis.com/finance-overall-storage/${window.localStorage.getItem(APP_USER_ID)}.jpeg?t=${new Date().getTime()}`);
   }
   
   onSelect(event: any, element: any): void {

@@ -27,12 +27,12 @@ export class WebsitePageComponent implements OnInit {
         if(user.name.localeCompare("Guest") === 0){ // if Guest then initiate Guest Picture
           // this.profilePicture = `uploads/Guest.jpg`; // use case for Local Environment
           // this.profilePicture = `https://storage.googleapis.com/finance-overall-storage/Guest.jpg`; // use case for Internet Environment
-          this.store.setProfilePicture(`https://storage.googleapis.com/finance-overall-storage/Guest.jpg`); // use case for Internet Environment
+          this.store.setProfilePicture(`https://storage.googleapis.com/finance-overall-storage/Guest.jpeg`); // use case for Internet Environment
         }
         else{
           // this.profilePicture = `uploads/${window.localStorage.getItem(APP_USER_ID)}.jpg`; // use case for Local Environment
           // this.profilePicture = `https://storage.googleapis.com/finance-overall-storage/${window.localStorage.getItem(APP_USER_ID)}.jpg?t=${new Date().getTime()}`; // use case for Internet Environment
-          this.store.setProfilePicture(`https://storage.googleapis.com/finance-overall-storage/${window.localStorage.getItem(APP_USER_ID)}.jpg?t=${new Date().getTime()}`); // use case for Internet Environment
+          this.store.setProfilePicture(`https://storage.googleapis.com/finance-overall-storage/${window.localStorage.getItem(APP_USER_ID)}.jpeg?t=${new Date().getTime()}`); // use case for Internet Environment
         }
       }
     );

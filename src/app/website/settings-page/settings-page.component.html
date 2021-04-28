@@ -38,7 +38,7 @@
                     </form> -->
                     <!-- <p-fileUpload #fubauto mode="basic" name="profile-pic" (url)="getURL()" accept=".jpg" (onUpload)="onUploadFinish($event)" maxFileSize="1000000" chooseLabel="Change"  ></p-fileUpload> -->
                     <!-- <p-fileUpload #fubauto mode="basic" name="profile-pic" [url]="uploadURL" accept=".jpg" (uploadHandler)="customUpload($event, fubauto)" customUpload="true" maxFileSize="2000000" chooseLabel="Change"></p-fileUpload> -->
-                    <p-fileUpload #fubauto mode="basic" name="profile-pic" [url]="uploadURL" accept=".jpg" (onUpload)="onUploadFinish($event)" (onSelect)="onSelect($event, fubauto)" maxFileSize="1000000" chooseLabel="Change"  ></p-fileUpload>
+                    <p-fileUpload #fubauto mode="basic" name="profile-pic" [url]="uploadURL" accept=".jpeg" (onUpload)="onUploadFinish($event)" (onSelect)="onSelect($event, fubauto)" maxFileSize="1000000" chooseLabel="Change"  ></p-fileUpload>
                 </div>
                 <img [src]="store.profilePicture" alt="profile picture" width="100px" height="100px" style="margin: 10px; border-radius: 50%;">
             </div>

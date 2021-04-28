@@ -22,7 +22,7 @@ export class StoreService {
     return this.userName;
   }
 
-  public profilePicture: any = `https://storage.googleapis.com/finance-overall-storage/Guest.jpg`;
+  public profilePicture: any = `https://storage.googleapis.com/finance-overall-storage/Guest.jpeg`;
 
   setProfilePicture(picture: any): void {
     this.profilePicture = picture;
